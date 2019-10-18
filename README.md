@@ -13,6 +13,15 @@ Given a dataset of used car listings scrapped from Craigslist, this program will
 The data used for this program was taken from Kaggle at the following link:
 https://www.kaggle.com/austinreese/craigslist-carstrucks-data
 
+Note: The pathways in the code must reference the paths that you have saved the datasets to.
+
+#### Price Cleaning
+(line 8) file - The path to the raw csv file downloaded from Kaggle
+(line 10) outputFolder - The path that you want to store the cleaned data
+
+#### Pricing Model
+(line 7) filePath - The same path as outputFolder
+
 ## Preprocessing
 The data will comein the form of a csv file The code will convert the file to a dataframe and filter out erroneous values (such as abnormally high values and nan values).  Once filtered, it will shuffle each row of the file.  It will then split the dataframe into two separate ones - one for training and one for testing - with a 90/10 split.  
 
